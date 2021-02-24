@@ -1,0 +1,10 @@
+.nav {
+    grid-area: nav;
+    background-color:rgb(102, 116, 195);
+}
+
+.item {
+    color:gold;
+ 
+}
+a{color:wheat;}

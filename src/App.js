@@ -1,12 +1,14 @@
 import "./App.css";
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
+    <div className="app-wrapper">
+      <Header />
+      <Navbar />
+      <Profile />
     </div>
   );
 }
