@@ -1,8 +1,9 @@
 .app-wrapper {
   width: 1150px;
+  height: 1000%;
   margin: 15px auto;
-  border: 1px solid goldenrod;
   display: grid;
+  grid-gap: 10px;
   grid-template-areas: 
       'header header'
         'nav content';

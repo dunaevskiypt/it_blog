@@ -1,10 +1,11 @@
 .nav {
     grid-area: nav;
     background-color:rgb(102, 116, 195);
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
-.item {
-    color:red;
- 
+.item  {
+    color:gold;
 }
-a{color:wheat;}
+

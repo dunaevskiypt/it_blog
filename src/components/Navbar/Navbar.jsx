@@ -4,7 +4,7 @@ import style from "./Navbar.module.css";
 function Navbar() {
   return (
     <nav className={style.nav}>
-      <div className={style.item}>
+      <div className={`${style.item}${style.active}`}>
         <a href="#">Profile</a>
       </div>
       <div className={style.item}>
