@@ -1,6 +1,46 @@
 .header {
-    grid-area: header;
     background-color:  #313131;
-    
+    display: grid;
+    grid-template-columns: 1fr 6fr 3fr;
+    grid-template-rows:  60px;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+    "logo nav social";
+    align-items: center;
 }
 
+.header_logo{
+    justify-self: center;
+    grid-area: logo;
+}
+.header_logo img {
+    height: 50px;
+    width: 50px;
+
+}
+.header_nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns:repeat(6, auto);  
+
+}
+.header_social {
+    grid-area: social;
+    display: grid;
+    grid-template-columns:repeat(4, auto);  
+}
+.header_nav__link {
+    color: #999999;
+    text-decoration: none;
+}
+
+.header_nav__link:hover {
+    color:#fff;
+}
+
+.item_social {
+    color: #999999;
+}
+.item_social:hover {
+    color: #fff;
+}

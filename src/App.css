@@ -1,15 +1,13 @@
+*,*::after, *:before {
+  box-sizing: border-box; 
+}
 body {
+  font-family: sans-serif;
   background-color: #272727;
 }
 .app-wrapper {
   width: 1150px;
   height: 1000%;
   margin: 15px auto;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-areas: 
-      'header header'
-        'nav content';
-        grid-template-columns: 2fr 10fr;
-        grid-template-rows: 60px 1fr;
+ 
 }

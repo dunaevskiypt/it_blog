@@ -1,22 +1,53 @@
 import React from "react";
 import style from "./Header.module.css";
+import { GoSearch } from "react-icons/go";
+import { HiUserAdd } from "react-icons/hi";
+import { BsFillEnvelopeFill } from "react-icons/bs";
+import { BsFillBellFill } from "react-icons/bs";
 
 function Header() {
   return (
     <header className={style.header}>
-        <div className="header-logo"><img src="" alt="logo"/></div>
-        <div className="header-menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Discussion</a></li>
-            <li><a href="#"></a>Weather</li>
-            <li><a href="#"></a>Pages</li>
-            <li><a href="#"></a>Blg</li>
-            <li><a href="#"></a>Add New Event </li>
-          </ul>
-        </div>
-        <div className="header-social"></div>
-        <div className="header-profile-menu"></div>
+      <a href="/" className={style.header_logo}>
+        <img
+          src="https://www.freeiconspng.com/uploads/flame-logo-png-30.png"
+          alt="logo"
+        />
+      </a>
+      <div className={style.header_nav}>
+        <a href="/" className={style.header_nav__link}>
+          Home
+        </a>
+        <a href="/" className={style.header_nav__link}>
+          Discussion
+        </a>
+        <a href="/" className={style.header_nav__link}>
+          Weather
+        </a>
+        <a href="/" className={style.header_nav__link}>
+          Pages
+        </a>
+        <a href="/" className={style.header_nav__link}>
+          Blg
+        </a>
+        <a href="/" className={style.header_nav__link}>
+          Add New Event
+        </a>
+      </div>
+      <div className={style.header_social}>
+        <a href="/" className={style.item_social}>
+          <GoSearch />
+        </a>
+        <a href="/" className={style.item_social}>
+          <HiUserAdd />
+        </a>
+        <a href="/" className={style.item_social}>
+          <BsFillEnvelopeFill />
+        </a>
+        <a href="/" className={style.item_social}>
+          <BsFillBellFill />
+        </a>
+      </div>
     </header>
   );
 }
