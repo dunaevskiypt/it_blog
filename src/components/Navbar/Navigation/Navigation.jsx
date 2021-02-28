@@ -9,6 +9,11 @@ function Navigation() {
           Messages
         </a>
       </div>
+      <div className={style.dialogNav}>
+        <a href="/" className={style.itemNavigation}>
+          Dialogs
+        </a>
+      </div>
       <div className={style.profileNav}>
         <a href="/" className={style.itemNavigation}>
           Profile

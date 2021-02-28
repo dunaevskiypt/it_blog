@@ -22,6 +22,11 @@
     padding: 20px;
     border-bottom: 1px solid black;
 }
+.dialogNav {
+    background-color:#313131;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
 a:hover {
     color: red;
 }
