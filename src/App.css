@@ -9,5 +9,14 @@ body {
   width: 1150px;
   height: 1000%;
   margin: 15px auto;
- 
+
+
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr;
+  grid-template-rows:  60px;
+  grid-template-areas: 
+  "header header header"
+  "nav content event"
+  "footer footer footer";
+  align-items: center;
 }

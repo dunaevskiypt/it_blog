@@ -1,9 +1,9 @@
 .header {
+    grid-area: header;
     background-color:  #313131;
     display: grid;
     grid-template-columns: 1fr 6fr 3fr;
     grid-template-rows:  60px;
-    grid-column-gap: 10px;
     grid-template-areas: 
     "logo nav social";
     align-items: center;
@@ -25,6 +25,7 @@
 
 }
 .header_social {
+    margin-top: 10px;
     grid-area: social;
     display: grid;
     grid-template-columns:repeat(4, auto);  
