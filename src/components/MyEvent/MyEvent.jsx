@@ -3,7 +3,7 @@ import style from "./MyEvent.module.css";
 
 function MyEvent() {
   return (
-    <div className={style.MyContent}>
+    <div className={style.MyEvent}>
       Event
       <div>A</div>
     </div>

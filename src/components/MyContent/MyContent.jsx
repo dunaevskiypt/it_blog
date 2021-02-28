@@ -5,7 +5,7 @@ import style from "./MyContent.module.css";
 function MyContent() {
   return (
     <div className={style.MyContent}>
-      <div>content</div>
+      <MyPosts />
     </div>
   );
 }
