@@ -1,6 +1,6 @@
 .MyEvent {
+    background-color: #313131;
     grid-area: event;
     margin-left: 30px;
     margin-top: 50px;
-    border: 1px solid red;
 }

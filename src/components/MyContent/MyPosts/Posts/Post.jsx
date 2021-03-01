@@ -14,19 +14,23 @@ function Post(props) {
         />
       </div>
       <div>
-        <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          dignissimos harum adipisci! Aspernatur, tenetur eaque.
-        </span>
+        <span>{props.message} </span>
         <button>
           <FcLike />
+          {props.likesCount}
+          {props.likesCount}
         </button>
         <button>
           <AiOutlineDislike />
+          {props.likesCount}
         </button>
         <button>
           <AiOutlineLike />
+          {props.likesCount}
         </button>
+        <span>
+          {props.name},{props.age}
+        </span>
       </div>
     </div>
   );
