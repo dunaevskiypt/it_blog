@@ -30,3 +30,7 @@
 a:hover {
     color: red;
 }
+
+.itemNavigation a.activeLink {
+    color: gold;
+}

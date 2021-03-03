@@ -1,34 +1,55 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import style from "./Navigation.module.css";
 
 function Navigation() {
   return (
     <div className={style.navigation}>
       <div className={style.massegeNav}>
-        <a href="/home_page" className={style.itemNavigation}>
+        <NavLink
+          to="/home_page"
+          activeClassName={style.activeLink}
+          className={style.itemNavigation}
+        >
           Home page
-        </a>
+        </NavLink>
       </div>
       <div className={style.dialogNav}>
-        <a href="/dialogs" className={style.itemNavigation}>
+        <NavLink
+          to="/dialogs"
+          activeClassName={style.activeLink}
+          className={style.itemNavigation}
+        >
           Dialogs
-        </a>
+        </NavLink>
       </div>
       <div className={style.profileNav}>
-        <a href="/profile" className={style.itemNavigation}>
+        <NavLink
+          to="/profile"
+          activeClassName={style.activeLink}
+          className={style.itemNavigation}
+        >
           Profile
-        </a>
+        </NavLink>
       </div>
 
       <div className={style.profileNews}>
-        <a href="/news" className={style.itemNavigation}>
+        <NavLink
+          to="/news"
+          activeClassName={style.activeLink}
+          className={style.itemNavigation}
+        >
           News
-        </a>
+        </NavLink>
       </div>
       <div className={style.profileMusic}>
-        <a href="/music" className={style.itemNavigation}>
+        <NavLink
+          to="/music"
+          activeClassName={style.activeLink}
+          className={style.itemNavigation}
+        >
           Music
-        </a>
+        </NavLink>
       </div>
     </div>
   );
