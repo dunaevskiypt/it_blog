@@ -16,7 +16,6 @@ function App() {
         <div className="app-wrapper-content">
           <Route path="/home_page" component={MyContent} />
           <Route path="/dialogs" component={Dialogs} />
-          <Route path="/dialogs" component={Dialogs} />
         </div>
         <MyEvent />
         <Footer />
