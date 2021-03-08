@@ -1,8 +1,8 @@
 import React from "react";
 import MyPosts from "./MyPosts/MyPosts";
-import style from "./MyContent.module.css";
+import style from "./Profile.module.css";
 
-function MyContent() {
+function Profile() {
   return (
     <div className={style.MyContent}>
       <MyPosts />
@@ -10,4 +10,4 @@ function MyContent() {
   );
 }
 
-export default MyContent;
+export default Profile;

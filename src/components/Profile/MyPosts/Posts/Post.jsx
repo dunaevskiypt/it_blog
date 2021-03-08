@@ -2,7 +2,6 @@ import React from "react";
 import style from "./Post.module.css";
 import { AiOutlineLike } from "react-icons/ai";
 import { AiOutlineDislike } from "react-icons/ai";
-import { FcLike } from "react-icons/fc";
 
 function Post(props) {
   return (
@@ -13,24 +12,14 @@ function Post(props) {
           alt="ava"
         />
       </div>
-      <div>
-        <span>{props.message} </span>
-        <button>
-          <FcLike />
-          {props.likesCount}
-          {props.likesCount}
-        </button>
+      <div className={style.post_btn}>
         <button>
           <AiOutlineDislike />
-          {props.likesCount}
         </button>
         <button>
           <AiOutlineLike />
-          {props.likesCount}
         </button>
-        <span>
-          {props.name},{props.age}
-        </span>
+        <span></span>
       </div>
     </div>
   );

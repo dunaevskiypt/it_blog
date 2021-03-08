@@ -7,11 +7,11 @@ function Navigation() {
     <div className={style.navigation}>
       <div className={style.massegeNav}>
         <NavLink
-          to="/home_page"
+          to="/profile"
           activeClassName={style.activeLink}
           className={style.itemNavigation}
         >
-          Home page
+          Profile
         </NavLink>
       </div>
       <div className={style.dialogNav}>
@@ -25,11 +25,11 @@ function Navigation() {
       </div>
       <div className={style.profileNav}>
         <NavLink
-          to="/profile"
+          to="/settings"
           activeClassName={style.activeLink}
           className={style.itemNavigation}
         >
-          Profile
+          Settings
         </NavLink>
       </div>
 
