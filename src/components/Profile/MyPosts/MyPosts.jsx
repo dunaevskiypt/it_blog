@@ -8,10 +8,6 @@ function MyPosts() {
       <textarea name="" id="" cols="10" rows="1"></textarea>
       <br></br>
       <button>Create Post</button>
-      <Posts />
-      <Posts />
-      <Posts />
-      <Posts />
     </div>
   );
 }
