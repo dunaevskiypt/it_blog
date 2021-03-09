@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./Messages.module.css";
+import style from "./Message.module.css";
 
-function Messages() {
+function Message() {
   return (
     <div className={style.UserInfo}>
       <div>hello Messages</div>
@@ -9,4 +9,4 @@ function Messages() {
   );
 }
 
-export default Messages;
+export default Message;
