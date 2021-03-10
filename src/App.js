@@ -14,8 +14,16 @@ function App(props) {
         <Header />
         <Navbar />
         <div className="app-wrapper-content">
-          <Route path="/dialogs" render={() => <Dialog />} />
-          <Route path="/profile" render={() => <Profile />} />
+          <Route
+            path="/dialogs"
+            render={() => (
+              <Dialog dialogs={props.dialogs} messages={props.messages} />
+            )}
+          />
+          <Route
+            path="/profile"
+            render={() => <Profile posts={props.post} />}
+          />
         </div>
         <MyEvent />
         <Footer />

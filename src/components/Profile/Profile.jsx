@@ -5,7 +5,7 @@ import style from "./Profile.module.css";
 function Profile(props) {
   return (
     <div className={style.MyContent}>
-      <MyPosts />
+      <MyPosts posts={props.posts} />
     </div>
   );
 }
