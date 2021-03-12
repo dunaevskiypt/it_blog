@@ -1,6 +1,6 @@
 
 .profileInfo {
-    height: 385px;
+    height: 280px;
     background-color:#313131;
     position: relative;
 }
@@ -8,7 +8,7 @@
 
 .profileFoto {
     position: absolute;
-    margin-top:30px;
+    margin-top:15px;
     border-radius: 50%;
     margin-left: 45px;
     border: 3px solid #fff;
@@ -22,13 +22,13 @@
 .profileName {
     color:whitesmoke;
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: 57px;
     text-align: center;
 }
 .profilePosition {
     position: absolute;
-    top: 235px;
+    top: 200px;
     left: 47px;
     text-align: center;
     color: #99999b;
@@ -36,7 +36,7 @@
 
 .profileWiev {
     position: absolute;
-    top: 280px;
+    top: 230px;
     left: 55px;
     align-items:center;
     text-align: center;
