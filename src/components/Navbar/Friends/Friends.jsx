@@ -16,6 +16,13 @@ function Friends (props) {
                 <FriendProfile/>
                 <FriendProfile/>
                 <FriendProfile/>
+                <FriendProfile/>
+                <FriendProfile/>
+                <FriendProfile/>
+                <FriendProfile/>
+                <FriendProfile/>
+                <FriendProfile/>
+                <FriendProfile/>
             </div>
         </div>
     )

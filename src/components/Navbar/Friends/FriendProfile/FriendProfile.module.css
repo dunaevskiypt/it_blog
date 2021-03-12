@@ -1,6 +1,10 @@
-.Friends_wrapper {
-    height: 280px;
-    background-color:#313131;
-    position: relative;
-    margin-top: 25px;
+.friendProfile_wrapper {
+    margin: 0 auto;
+    
+}
+.logo img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+ 
 }

@@ -1,6 +1,14 @@
 .Friends_wrapper {
     height: 280px;
     background-color:#313131;
-    position: relative;
     margin-top: 25px;
+    
+}
+
+.friens_info {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  
 }
