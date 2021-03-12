@@ -4,11 +4,12 @@ import style from "./Navbar.module.css";
 import Navigation from "./Navigation/Navigation";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-function Navbar() {
+function Navbar(props) {
+  debugger
   return (
     <nav className={style.nav}>
       <ProfileInfo />
-      <Friends/>
+      <Friends state={props.state}/>
       <Navigation />
     </nav>
   );
