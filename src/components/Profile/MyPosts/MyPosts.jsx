@@ -20,7 +20,7 @@ function MyPosts(props) {
   return (
     <div className={style.MyPosts}>
       <textarea cols="10" rows="1"></textarea>
-      <br></br>
+      <br>hello</br>
       <button onClick={onAddpost}>Create Post</button>
       <h3>MyPosts</h3>
       <div className={style.posts}>{postElements}</div>
