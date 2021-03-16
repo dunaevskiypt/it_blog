@@ -9,7 +9,7 @@ let rerenderEntireTree = (state) => {
   ReactDOM.render(
     <React.StrictMode>
       <App
-        state={store._state}
+        state={store.getSatte()}
         addPost={store.addPost}
         updateNewPostText={store.updateNewPostText}
       />
@@ -18,6 +18,6 @@ let rerenderEntireTree = (state) => {
   );
 };
 
-rerenderEntireTree(store._state);
+rerenderEntireTree(store.getSatte);
 
 store.subscribe(rerenderEntireTree);

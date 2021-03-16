@@ -85,25 +85,31 @@ let store = {
       ],
     },
   },
-  rerenderEntireTree() {
+
+  getSatte(){
+    return this._state
+  },
+  _callSubsriber() {
+
     console.log("state was changed");
   },
   addPost() {
     let newPost = {
       id: 5,
-      message: state.profilePage.newPostEText,
+      message: this._state.profilePage.newPostEText,
       likeCount: 0,
     };
-    state.profilePage.posts.push(newPost);
-    state.profilePage.newPostEText = "";
-    rerenderEntireTree(state);
+    this._state.profilePage.posts.push(newPost);
+    this._profilePage.newPostEText = "";
+    this._callSubsriber(this._state);
   },
   updateNewPostText(newText) {
-    state.profilePage.newPostEText = newText;
-    rerenderEntireTree(state);
+    this._profilePage.newPostEText = newText;
+    this.rerenderEntireTree(this._state);
   },
   subscribe(observer) {
-    rerenderEntireTree = observer;
+    
+    this._callSubsriber = observer;
   },
 };
 
