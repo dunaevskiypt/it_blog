@@ -98,7 +98,7 @@ let store = {
   subscribe(observer) {
     this._callSubsriber = observer;
   },
-  getSatte() {
+  getState() {
     return this._state;
   },
   dispatch(action) {
@@ -120,7 +120,7 @@ let store = {
     } else if (action.type === SEND_MESSAGE) {
       let body = this._state.dialogsPage.newMessageBody;
       this._state.dialogsPage.newMessageBody = "";
-      this._state.dialogsPage.messages.psuh({ id: 6, message: body });
+      this._state.dialogsPage.messages.push({ id: 6, message: body });
       this._callSubsriber(this._state);
     }
   },

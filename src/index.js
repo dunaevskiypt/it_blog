@@ -13,6 +13,6 @@ let rerenderEntireTree = (state) => {
   );
 };
 
-rerenderEntireTree(store.getSatte);
+rerenderEntireTree(store.getState());
 
 store.subscribe(rerenderEntireTree);

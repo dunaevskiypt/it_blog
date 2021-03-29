@@ -12,7 +12,7 @@ function App(props) {
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
-        <Navbar state={props.state.friendPage} />
+        <Navbar />
         <div className="app-wrapper-content">
           <Route
             path="/dialogs"

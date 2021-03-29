@@ -8,7 +8,7 @@ function Navbar(props) {
   return (
     <nav className={style.nav}>
       <ProfileInfo />
-      <Friends state={props.state} />
+      <Friends />
       <Navigation />
     </nav>
   );
