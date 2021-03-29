@@ -2,8 +2,8 @@ import React from "react";
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import style from "./Dialog.module.css";
-import { updateNewMessageBodyCreator } from "../reudx/state";
-import { sendMessageCreator } from "../reudx/state";
+import { updateNewMessageBodyCreator } from "../reudx/dialogs-reducer";
+import { sendMessageCreator } from "../reudx/dialogs-reducer";
 
 function Dialog(props) {
   let state = props.store.getState().dialogsPage;

@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./MyPosts.module.css";
 import Post from "./Posts/Post";
-import { PostActionCreator } from "../../reudx/state";
-import { UpdateNewPostTextActionCreator } from "../../reudx/state";
+import { PostActionCreator } from "../../reudx/profile-reducer";
+import { UpdateNewPostTextActionCreator } from "../../reudx/profile-reducer";
 
 function MyPosts(props) {
   let postElements = props.posts.map((post) => (
