@@ -5,7 +5,7 @@ import MyEvent from "./components/MyEvent/MyEvent";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Route } from "react-router-dom";
 import Profile from "./components/Profile/Profile";
-import Dialog from "./components/Dialog/Dialog";
+import DialogContainer from "./components/Dialog/DialogContainer";
 
 function App(props) {
   return (
@@ -16,16 +16,11 @@ function App(props) {
         <div className="app-wrapper-content">
           <Route
             path="/dialogs"
-            render={() => <Dialog store={props.store} />}
+            render={() => <DialogContainer store={props.store} />}
           />
           <Route
             path="/profile"
-            render={() => (
-              <Profile
-                profilePage={props.state.profilePage}
-                dispatch={props.dispatch}
-              />
-            )}
+            render={() => <Profile store={props.store} />}
           />
         </div>
         <MyEvent />

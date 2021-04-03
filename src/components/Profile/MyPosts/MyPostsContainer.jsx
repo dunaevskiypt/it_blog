@@ -1,6 +1,8 @@
 import React from "react";
 import style from "./MyPosts.module.css";
 import Post from "./Posts/Post";
+import { PostActionCreator } from "../../reudx/profile-reducer";
+import { UpdateNewPostTextActionCreator } from "../../reudx/profile-reducer";
 
 function MyPosts(props) {
   let postElements = props.posts.map((post) => (
@@ -14,13 +16,14 @@ function MyPosts(props) {
 
   let newPostElement = React.createRef();
 
-  let onaddPost = () => {
-    props.addPost();
+  let addPost = () => {
+    props.dispatch(PostActionCreator());
   };
 
   let onPostChange = () => {
     let text = newPostElement.current.value;
-    props.UpdateNewPostText(text);
+    let action = UpdateNewPostTextActionCreator(text);
+    props.dispatch(action);
   };
 
   return (
@@ -28,10 +31,10 @@ function MyPosts(props) {
       <textarea
         onChange={onPostChange}
         ref={newPostElement}
-        value={props.newPostText}
+        value={props.newPostEText}
       />
       <br></br>
-      <button onClick={onaddPost}>Create Post</button>
+      <button onClick={addPost}>Create Post</button>
       <h3>MyPosts</h3>
       <div className={style.posts}>{postElements}</div>
     </div>

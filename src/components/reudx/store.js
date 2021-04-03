@@ -13,7 +13,7 @@ let store = {
         { id: 5, message: "Hello new friend", likeCount: 1354 },
         { id: 5, message: "Hello new mount", likeCount: 1354 },
       ],
-      newPostEText: "in power",
+      newPostText: "in power",
     },
     dialogsPage: {
       dialogs: [

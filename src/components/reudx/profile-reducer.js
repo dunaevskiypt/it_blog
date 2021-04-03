@@ -10,14 +10,14 @@ let initialSatate = {
     { id: 5, message: "Hello new friend", likeCount: 1354 },
     { id: 5, message: "Hello new mount", likeCount: 1354 },
   ],
-  newPostEText: "in power",
+  newPostText: "in power",
 };
 
 const profileReducer = (state = initialSatate, action) => {
   if (action.type === ADD_POST) {
     let newPost = {
       id: 5,
-      message: state.newPostEText,
+      message: state.newPostText,
       likeCount: 0,
     };
     state.posts.push(newPost);
