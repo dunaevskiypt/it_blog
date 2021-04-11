@@ -14,6 +14,17 @@ function Navigation() {
           Profile
         </NavLink>
       </div>
+
+      <div className={style.usersNav}>
+        <NavLink
+          to="/users"
+          activeClassName={style.activeLink}
+          className={style.itemNavigation}
+        >
+          Users
+        </NavLink>
+      </div>
+
       <div className={style.dialogNav}>
         <NavLink
           to="/dialogs"
