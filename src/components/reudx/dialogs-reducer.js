@@ -1,6 +1,6 @@
 
 const SEND_MESSAGE = "SEND-MESSAGE";
-
+const UPDATE_NEW_MESSAGE_BODY = "UPDATE_NEW_MESSAGE_BODY";
 let initialSatate = {
   dialogs: [
     { id: 1, name: "Peter" },

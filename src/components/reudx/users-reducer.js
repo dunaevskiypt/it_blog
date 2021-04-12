@@ -32,24 +32,27 @@ let initialSatate = {
 const usersReducer = (state = initialSatate, action) => {
   switch (action.type) {
     case FOLLOW:
-      return { 
-        ...state, 
-        users:state.users.map(callbackfn: u=>{
-        if(u.id === action.userID){
-          return (...u,followed: true)
-        }
-        return u
-      }) };
+      return {
+        ...state,
+        users: state.users.map((u) => {
+          if (u.id === action.userId) {
+            return { ...u, followed: true };
+          }
+        }),
+      };
+
     case UNFOLLOW:
-      return { ...state, 
-        users:state.users.map(callbackfn: u=>{
-        if(u.id === action.userID){
-          return (...u,followed: false)
-        }
-        return u
-      }) };
+      return {
+        ...state,
+        users: state.users.map((u) => {
+          if (u.id === action.userId) {
+            return { ...u, followed: true };
+          }
+        }),
+      };
+
     case SET_USERS: {
-      return{...state, users:[...state.users, ...action.users]}
+      return { ...state, users: [...state.users, ...action.users] };
     }
     default:
       return state;
