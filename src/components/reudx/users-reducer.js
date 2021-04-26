@@ -6,6 +6,8 @@ let initialSatate = {
   users: [
     {
       id: 1,
+      fotoUrl:
+        "https://cdn.7days.ru/upload/images/8cb/4e6b8c4e071d254a99fe97db041e9.jpg",
       followed: true,
       fullName: "Dmitro",
       status: "I am a bosss",
@@ -13,6 +15,8 @@ let initialSatate = {
     },
     {
       id: 2,
+      fotoUrl:
+        "https://cdn.7days.ru/upload/images/8cb/4e6b8c4e071d254a99fe97db041e9.jpg",
       followed: false,
       fullName: "Ann",
       status: "I am a bosss too",
@@ -20,13 +24,14 @@ let initialSatate = {
     },
     {
       id: 3,
+      fotoUrl:
+        "https://cdn.7days.ru/upload/images/8cb/4e6b8c4e071d254a99fe97db041e9.jpg",
       followed: true,
       fullName: "Peter",
       status: "I am a junior dev",
       location: { city: "Kharkiv", country: "Ukraine" },
     },
   ],
-  newPostText: "in power",
 };
 
 const usersReducer = (state = initialSatate, action) => {
@@ -34,7 +39,7 @@ const usersReducer = (state = initialSatate, action) => {
     case FOLLOW:
       return {
         ...state,
-        users: state.users.map((u)=> {
+        users: state.users.map((u) => {
           if (u.id === action.userId) {
             return { ...u, followed: true };
           }
@@ -44,11 +49,11 @@ const usersReducer = (state = initialSatate, action) => {
     case UNFOLLOW:
       return {
         ...state,
-        users: state.users.map((u)=> {
+        users: state.users.map((u) => {
           if (u.id === action.userId) {
             return { ...u, followed: true };
           }
-           return u;
+          return u;
         }),
       };
     case SET_USERS: {
